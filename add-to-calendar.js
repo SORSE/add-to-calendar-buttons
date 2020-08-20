@@ -138,8 +138,8 @@
     },
 
     off365: function(event) {
-      var startTime = formatTime(event.tzstart);
-      var endTime = formatTime(event.tzend);
+      var startTime = event.tzstart.toISOString();
+      var endTime = event.tzend.toISOString();
       
       var href = encodeURI([
         'https://outlook.office365.com/owa/',
